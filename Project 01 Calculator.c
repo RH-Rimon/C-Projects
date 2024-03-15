@@ -1,5 +1,6 @@
 #include<stdio.h>
 int main()
+
 {
     printf("\n\n\n-----------------------------------CALCULATOR----------------------------------\n \n");
     printf(" \t \t \t \tOperation Menu\n\n");
@@ -11,14 +12,73 @@ int main()
     printf("14. Decimal to Hexa-Decimal \t 15. Binary to Decimal\n");
     printf("16. Binary to Octal \t\t 17. Binary to Hexa-Decimal\n\n\n");
 
-    int choice;
+    //sqrt,nCr,nPr,!,quadratic equation,matrix,calculus,basic probability,probability tree
+
+    int choice,option;
     printf("Enter Your Choice: ");
     scanf("%d",&choice);
 
 
+    if(choice==1)
+    {
+        sum();
+        printf("1. Exit\n");
+        printf("2. Another Operation\n");
+        scanf("%d",&option);
+        if(option == 2)
+        {
+            printf("Enter Your Choice: ");
+            scanf("%d",&choice);
+
+        }
+    }
+     if(choice==2)
+    {
+        sub();
+        printf("1. Exit\n");
+        printf("2. Another Operation\n");
+        scanf("%d",&option);
+        if(option == 2)
+        {
+
+            printf("Enter Your Choice: ");
+            scanf("%d",&choice);
+        }
+    }
+}
+
+//Calculation of Sum
+
+void sum()
+{
+
+    int num1,num2;
+    printf("Enter Two Numbers: \n");
+    scanf("%d",&num1);
+    scanf("%d",&num2);
+    printf("Sum of %d + %d = %d\n",num1,num2,num1+num2);
+
+}
+
+//Calculation of Subtraction
+
+void sub()
+{
+
+    int num1,num2;
+    printf("Enter Two Numbers: \n");
+    scanf("%d",&num1);
+    scanf("%d",&num2);
+    printf("Sum of %d - %d = %d\n",num1,num2,num1-num2);
 
 
+}
 
+//Options--> Exit/Another Operation
+void options()
+{
 
-    return 0;
+    int choices;
+    printf("Enter Your Choice: ");
+    scanf("%d",&choices);
 }
